@@ -3,7 +3,7 @@
 ## First adoption
 
 1. Obtain a readable checkout of `warung-kerja/agent-rules` on the machine running the project. Record its full Git commit SHA.
-2. Read README.md, core rules, and only the selected workflow. Ask whether this is product development before applying the session structure.
+2. Read README.md, the session principles, core rules, and only the selected workflow. The session principles apply to non-product work too. Ask whether this is product development before applying the session structure.
 3. Inspect the consuming repo's instructions, existing chats, Linear project, automations, and active work. Reuse working setup; identify conflicts before changing it.
 4. Copy the project-profile and session-register templates into the product's `docs/agent-team/`. Fill them with verified local settings. Keep private host paths and chat IDs in an ignored local register if the product repo is public.
 5. Incorporate the AGENTS snippet into existing project instructions without overwriting unrelated content. Record the selected rules paths, full adopted SHA, local exceptions, and how agents can read that revision.
@@ -19,6 +19,8 @@ Change the canonical files here and add a dated CHANGELOG entry explaining behav
 A change that alters authority, routing, model defaults, schedules, or completion criteria should describe what adopters must reconfigure. Do not imply existing sessions were updated just because the Markdown changed.
 
 ## Updating a consuming project
+
+When adopting the session principles, add `standards/session-principles.md` to the selected paths and any vendored snapshot. Update the runtime entrypoint and every role's common preamble to read it, including existing sessions. Preserve the 15 principles as one canonical list rather than making separate role-specific copies. Check local model/effort and delegation policies for conflicts; record any constraints or agreed exceptions. No schedule changes are required by this addition.
 
 1. At project onboarding or a deliberate rules-refresh task, fetch the library and compare the adopted commit with the proposed commit. Do not switch to a moving branch silently during an assignment.
 2. Summarize relevant differences and conflicts. Preserve local safety constraints and active holds. If a required source is unavailable, use the recorded snapshot and disclose the limitation; do not guess the latest rules.

@@ -4,6 +4,8 @@ Status: initial standard · Updated: 2026-10-25 · Scope: product-development pr
 
 Use this guide for a fresh product or to bring an existing project into the shared way of working. A session means a persistent project chat with a defined role. It is separate from a temporary subagent and has no automatic background execution merely because it exists.
 
+Every role follows the [15 shared session principles](../standards/session-principles.md). They also apply when the project does not qualify for this team structure.
+
 ## 1. Qualify the project
 
 First ask the owner: **“Is this a product-development project?”** An explicit answer already given in the current setup request counts; do not ask twice.
@@ -17,6 +19,8 @@ For this workflow, product development means building or maintaining a software 
 Writing or reading this guide does not itself authorize creating chats, messaging them, or enabling schedules. Apply it when the owner asks to set up the team. Confirm missing project settings; reuse authorization already given.
 
 ## 2. The six roles
+
+Use the cheapest capable model and appropriate effort for the task, following the shared principles. Routine mechanical work can use Luna 6 where available and authorized, while the role retains accountability.
 
 Model choices below are the owner's preferred assignments, not a universal ranking or a promise that every account supports them. Verify actual model identifiers on the destination host. Do not silently change an unavailable model; report it and obtain an agreed substitute. Role responsibilities should remain stable as models evolve.
 
@@ -134,7 +138,8 @@ Replace placeholders using the completed project profile. Supply the common prea
 ```text
 You are <ROLE> for <PROJECT>, a product-development project.
 Read the repository instructions, docs/agent-team/project-profile.md, the verified
-session register, and the adopted shared core rules and product-session guide.
+session register, standards/session-principles.md, and the adopted shared core
+rules and product-session guide. Apply all 15 principles in this role.
 Use exactly the rules revision recorded in the profile; report inaccessible files.
 Follow project-specific constraints, active holds, and current owner authorization.
 Use the registered team destinations. Cross-chat messaging and Linear writes are

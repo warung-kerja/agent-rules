@@ -10,7 +10,7 @@ Fill this in inside the consuming product repository. `TBD` means unresolved, no
 - Product repository URL: TBD
 - Shared rules repository: https://github.com/warung-kerja/agent-rules
 - Adopted rules commit (full SHA): TBD
-- Adopted paths: `standards/core-rules.md`, `workflows/product-session-setup.md`
+- Adopted paths: `standards/session-principles.md`, `standards/core-rules.md`, `workflows/product-session-setup.md`
 - Rules access: pinned local checkout / vendored snapshot
 - Last adoption date: TBD
 - Project-specific overrides, reason, approving owner, and review date: none recorded
