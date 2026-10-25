@@ -1,6 +1,8 @@
 # Core rules
 
-Status: initial standard, 2026-10-25.
+Updated: 2026-10-25.
+
+Read and follow the [principles for every session](session-principles.md). They are the shared baseline for every role, including non-product work. This document adds operational detail; it does not replace those principles.
 
 ## Sources of truth
 
@@ -14,7 +16,7 @@ Verify live state before acting. A historical handoff, stale ticket, or previous
 
 ## Scope and authority
 
-Follow applicable runtime instructions, the owner's current authorization, and project-specific constraints. These shared standards are defaults; they cannot override higher-priority instructions or grant tools and permissions. Record local exceptions with a reason and owner.
+Follow applicable runtime instructions, the owner's current authorization, and project-specific constraints. These shared standards establish the baseline; they cannot override higher-priority instructions or grant tools and permissions. Record local exceptions with a reason and owner.
 
 A new ticket is intake, not automatic execution permission. The project must define what may be dispatched and implemented without further approval. Continue work already authorized; ask only when required information or authority is genuinely missing. Prepare a concrete, reviewable result before requesting a final approval.
 
@@ -37,6 +39,10 @@ Reviewer independently inspects the current PR head and base, relevant diff, reg
 Do not call work Done solely because code exists or a PR is open. Each project defines whether Done means merged or deployed/accepted. Record implementation, merge, and deployment separately when they differ.
 
 ## Cost and continuity
+
+Use the cheapest capable model and appropriate effort. Default suitable routine ticket updates, formatting, and mechanical work to Luna 6 where available. Preserve the accountable role and its context; preferred session models do not require every task to use that model. Model changes and delegation must respect the runtime, project configuration, and agreed scope.
+
+Delegate bounded tasks when it improves the outcome. Parallelise independent work with clear inputs, ownership, and completion criteria. Integrate results and close finished workers; the parent session remains accountable.
 
 Use Brain for consequential architecture, hard unresolved tradeoffs, and substantial brainstorming. Routine planning stays with Planner. Manager coordinates; Sweeper discovers; Builder implements; Reviewer reviews.
 

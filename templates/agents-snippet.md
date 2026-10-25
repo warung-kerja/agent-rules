@@ -9,8 +9,8 @@ This is a product-development project. Read `docs/agent-team/project-profile.md`
 and the session register at <verified local or repository path>.
 
 Shared rules come from https://github.com/warung-kerja/agent-rules at the full
-commit recorded in the project profile. Read the selected core rules and
-product-session guide from <verified pinned checkout or vendored snapshot path>
+commit recorded in the project profile. Read standards/session-principles.md,
+the selected core rules, and the product-session guide from <verified pinned checkout or vendored snapshot path>
 before acting in a team role. If unavailable, report the limitation and use
 only the last verified adopted snapshot; never silently follow moving main.
 

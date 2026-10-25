@@ -6,6 +6,8 @@ This repository owns reusable standards. Each product repository owns its implem
 
 ## Start here
 
+Every session starts with the [15 shared principles](standards/session-principles.md), regardless of role or project type.
+
 Ask: **Is this a product-development project?**
 
 - **Yes:** follow [Product session setup](workflows/product-session-setup.md) to establish the six-session team.
@@ -14,13 +16,13 @@ Ask: **Is this a product-development project?**
 
 To use this library, ask your agent:
 
-> Read https://github.com/warung-kerja/agent-rules and its product-session setup guide. Determine whether this is product development. If it is, inspect the existing project and sessions, propose or apply the setup within my authorization, and preserve project-specific constraints. Record the adopted rules commit. Reuse existing sessions and routines where possible.
+> Read https://github.com/warung-kerja/agent-rules and its shared session principles. For product development, also read its product-session setup guide. Determine whether this is product development. If it is, inspect the existing project and sessions, propose or apply the setup within my authorization, and preserve project-specific constraints. Record the adopted rules commit. Reuse existing sessions and routines where possible.
 
 ## Library
 
 | Folder | Purpose | Current contents |
 | --- | --- | --- |
-| `standards/` | Shared guardrails that apply across workflows | [Core rules](standards/core-rules.md) |
+| `standards/` | Shared guardrails that apply across workflows | [Session principles](standards/session-principles.md), [core rules](standards/core-rules.md) |
 | `workflows/` | Procedures for setting up and operating projects | [Product session setup](workflows/product-session-setup.md), [adopting and updating rules](workflows/adopt-and-update.md) |
 | `templates/` | Starting points copied into a consuming project | [Project profile](templates/project-profile.md), [session register](templates/session-register.md), [AGENTS snippet](templates/agents-snippet.md) |
 
