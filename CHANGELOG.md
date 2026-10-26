@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-25 — Check existing credential documentation first
+
+- Require every session to check `02_Business_Operations/docs` in the local Obsidian vault before asking the owner for API keys or tokens.
+- Resolve the vault location per laptop, read only relevant service documentation, and request filesystem access when needed.
+- Keep secret values out of repository files, tool output, chats, tickets, PRs, and handoffs; stored credentials do not expand task authority.
+
+Existing adopters must refresh their core rules and session instructions. No credential documents were read or copied as part of this documentation change.
+
 ## 2026-10-25 — Principles for every session
 
 - Added the owner's 15 principles as `standards/session-principles.md`, applicable to every role and to non-product work.

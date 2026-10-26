@@ -48,6 +48,16 @@ Use Brain for consequential architecture, hard unresolved tradeoffs, and substan
 
 Record durable decisions with context, rationale, and consequences in the product repo. Respect pause/cancel and existing holds across sessions and machines. Never turn an old backlog or roadmap into new authority.
 
+## API key and token lookup
+
+Before asking the owner for an API key or token, first look for the relevant service documentation under `02_Business_Operations/docs` in the owner's local Obsidian vault. The owner maintains this folder on both laptops. Resolve it relative to the vault on the current machine; do not assume the same absolute path on both computers or confuse the vault root with the separate shared Warung Wiki folder.
+
+Search narrowly for the service needed by the current authorized task and read only relevant documents. Follow any reference to the approved credential store or setup procedure. Do not read the entire folder or print document contents that may contain secrets. If filesystem permissions block access, request access to the relevant location before asking for a replacement credential.
+
+Ask the owner only if the relevant documents or credential are missing, inaccessible after the access request, ambiguous, or unusable. Explain the specific gap without exposing secret values. A stored credential permits only actions already authorized for the task.
+
+Never copy keys, tokens, or secret-bearing document contents into this public repository, chat replies, command output, logs, tickets, PRs, or Wiki handoffs. Use the project's approved secret mechanism and report only whether the needed credential was found and configured.
+
 ## Public-library hygiene
 
 Store reusable, sanitized instructions here. Keep secrets in the project's approved secret mechanism. Do not commit private task content, customer material, internal identifiers, or machine-specific settings merely to make a template realistic.
