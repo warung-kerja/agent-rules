@@ -40,7 +40,7 @@ Do not call work Done solely because code exists or a PR is open. Each project d
 
 ## Cost and continuity
 
-Use the cheapest capable model and appropriate effort. Default suitable routine ticket updates, formatting, and mechanical work to Luna 6 where available. Preserve the accountable role and its context; preferred session models do not require every task to use that model. Model changes and delegation must respect the runtime, project configuration, and agreed scope.
+Use the cheapest capable model and appropriate effort. Default suitable routine ticket updates, formatting, and mechanical work to Luna 6 where available. Preserve the accountable role and its context; preferred session models do not require every task to use that model. Model changes follow the [automatic same-family upgrade policy](model-presets.md). Delegation and model changes must respect the runtime, project configuration, explicit pins, and agreed scope.
 
 Delegate bounded tasks when it improves the outcome. Parallelise independent work with clear inputs, ownership, and completion criteria. Integrate results and close finished workers; the parent session remains accountable.
 

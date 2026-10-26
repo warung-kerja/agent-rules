@@ -2,7 +2,7 @@
 
 This repository is the shared library of agent standards and workflows. It is not a product-development app; do not create the six-session product team for this repo by default.
 
-- Read README.md, standards/session-principles.md, and only the relevant standards/workflows/templates. Apply the shared principles to work in this repository as well.
+- Read README.md, standards/session-principles.md, standards/model-presets.md, and only the relevant standards/workflows/templates. Apply the shared principles to work in this repository as well.
 - Keep reusable rules here and project-specific configuration in the consuming project.
 - Keep the role definitions and their copy/paste prompts consistent.
 - When changing expected behavior, update CHANGELOG.md and relevant adoption guidance.

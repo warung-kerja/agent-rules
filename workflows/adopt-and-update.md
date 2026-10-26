@@ -3,12 +3,12 @@
 ## First adoption
 
 1. Obtain a readable checkout of `warung-kerja/agent-rules` on the machine running the project. Record its full Git commit SHA.
-2. Read README.md, the session principles, core rules, and only the selected workflow. The session principles apply to non-product work too. Ask whether this is product development before applying the session structure.
+2. Read README.md, the session principles, core rules, model policy, and the selected setup guide. Use the [project preset selector](project-session-setup.md); ask only if the project type is unclear. The session principles apply to every preset.
 3. Inspect the consuming repo's instructions, existing chats, Linear project, automations, and active work. Reuse working setup; identify conflicts before changing it.
-4. Copy the project-profile and session-register templates into the product's `docs/agent-team/`. Fill them with verified local settings. Keep private host paths and chat IDs in an ignored local register if the product repo is public.
+4. Copy the project-profile and session-register templates into the project's `docs/agent-team/` or equivalent documented project folder. Select only the chosen preset's roles; product-only routine defaults do not apply to other presets. Fill them with verified local settings. Keep private host paths and chat IDs in an ignored local register if the product repo is public.
 5. Incorporate the AGENTS snippet into existing project instructions without overwriting unrelated content. Record the selected rules paths, full adopted SHA, local exceptions, and how agents can read that revision.
 6. If agents cannot access the library reliably, vendor the selected files into `docs/agent-team/shared-rules/`. Preserve their source paths and SHA; update them together through adoption PRs. Configure each runtime's recognized instructions entrypoint to read these files.
-7. Follow the product-session guide to configure and verify the team. Record what is installed, deferred, or blocked.
+7. Follow the selected session guide to configure and verify the team. Record what is installed, deferred, or blocked.
 
 A Markdown link does not load instructions automatically. For Codex, use the project's AGENTS.md as the entrypoint and explicitly direct it to the relevant files. Other agents need their own supported entrypoint. See the [official AGENTS.md guidance](https://learn.chatgpt.com/docs/agent-configuration/agents-md).
 
@@ -19,6 +19,8 @@ Change the canonical files here and add a dated CHANGELOG entry explaining behav
 A change that alters authority, routing, model defaults, schedules, or completion criteria should describe what adopters must reconfigure. Do not imply existing sessions were updated just because the Markdown changed.
 
 ## Updating a consuming project
+
+To adopt the four-preset setup and model upgrades, include `standards/model-presets.md`, the selector, and the selected setup guide in the recorded paths/snapshots. Refresh existing prompts and runtime entrypoints. Record family, actual model, explicit pins, and upgrade status per session. Existing projects may reconcile verified same-family successors under this policy without a full rules migration; record the model-policy source separately. Other standards still follow pinned adoption. No existing chat, routine, or watcher changes merely because these files are added.
 
 When adopting the session principles, add `standards/session-principles.md` to the selected paths and any vendored snapshot. Update the runtime entrypoint and every role's common preamble to read it, including existing sessions. Preserve the 15 principles as one canonical list rather than making separate role-specific copies. Check local model/effort and delegation policies for conflicts; record any constraints or agreed exceptions. No schedule changes are required by this addition.
 

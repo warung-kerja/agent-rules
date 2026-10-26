@@ -23,7 +23,7 @@ These are the shared baseline. Apply them within the owner's agreed scope, appli
 ## Applying the principles
 
 - Read these principles at the project's adopted rules revision before acting. For non-product work, read them without creating the product team.
-- Preferred role models are starting assignments. Use Luna 6 for suitable routine work where available and routing permits it; keep the accountable role and context intact. Do not silently switch an existing session's configured model. Record agreed substitutions in the project profile.
+- Preferred role models are starting assignments. Use Luna 6 for suitable routine work where available and routing permits it; keep the accountable role and context intact. Apply verified same-family upgrades under the [model upgrade policy](model-presets.md) and record them; do not silently change families or override explicit pins. Record other agreed substitutions in the project profile.
 - Temporary subagents support the accountable session; they do not replace the persistent role sessions. Use delegation only when permitted by the runtime and agreed scope. Do not spawn workers merely to satisfy a quota or add review overhead to a simple task.
 - Use Linear, GitHub, and the Wiki where they are part of the project's setup and accessible. If a required destination is unavailable, preserve the evidence in the repository and report the blocker; do not claim the external update succeeded.
 - See [core rules](core-rules.md) for coordination and authority details and [adoption and updates](../workflows/adopt-and-update.md) for propagating changes.

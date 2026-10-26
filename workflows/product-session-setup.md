@@ -13,7 +13,7 @@ First ask the owner: **“Is this a product-development project?”** An explici
 For this workflow, product development means building or maintaining a software product, application, or product website with ongoing implementation work. A research task, branding project, documentation library, or one-off administrative job does not automatically qualify.
 
 - **Yes:** establish the six roles below.
-- **No:** skip this structure and apply only relevant shared rules.
+- **No:** skip this structure and select the [Design, Website, or General preset](project-session-setup.md).
 - **Unclear:** clarify before creating sessions or routines.
 
 Writing or reading this guide does not itself authorize creating chats, messaging them, or enabling schedules. Apply it when the owner asks to set up the team. Confirm missing project settings; reuse authorization already given.
@@ -22,7 +22,7 @@ Writing or reading this guide does not itself authorize creating chats, messagin
 
 Use the cheapest capable model and appropriate effort for the task, following the shared principles. Routine mechanical work can use Luna 6 where available and authorized, while the role retains accountability.
 
-Model choices below are the owner's preferred assignments, not a universal ranking or a promise that every account supports them. Verify actual model identifiers on the destination host. Do not silently change an unavailable model; report it and obtain an agreed substitute. Role responsibilities should remain stable as models evolve.
+Model choices below are initial family assignments governed by the [automatic model upgrade policy](../standards/model-presets.md). Upgrade to verified available successors in the same family without repeated confirmation, preserving role responsibilities. Verify actual model identifiers on the destination host. If a successor is unavailable, keep the working model and record the blocker; a different family requires an agreed substitution.
 
 | Session | Preferred model | Owns | Default activation |
 | --- | --- | --- | --- |
@@ -139,7 +139,9 @@ Replace placeholders using the completed project profile. Supply the common prea
 You are <ROLE> for <PROJECT>, a product-development project.
 Read the repository instructions, docs/agent-team/project-profile.md, the verified
 session register, standards/session-principles.md, and the adopted shared core
-rules and product-session guide. Apply all 15 principles in this role.
+rules, model upgrade policy, and product-session guide. Apply all 15 principles.
+Reconcile verified same-family successors before new assignments, preserving
+explicit pins and using supported settings controls; report blocked upgrades.
 Use exactly the rules revision recorded in the profile; report inaccessible files.
 Follow project-specific constraints, active holds, and current owner authorization.
 Use the registered team destinations. Cross-chat messaging and Linear writes are
