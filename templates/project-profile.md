@@ -1,16 +1,17 @@
 # Agent team project profile
 
-Fill this in inside the consuming product repository. `TBD` means unresolved, not permission.
+Fill this in inside the consuming project repository or documented project folder. `TBD` means unresolved, not permission.
 
 ## Identity and adoption
 
 - Project name: TBD
-- Product development: yes / no / needs clarification
+- Project preset: product-development / design / website / general / needs clarification
+- Product development: yes / no (only the product preset uses the six-session team)
 - Owner: TBD
 - Product repository URL: TBD
 - Shared rules repository: https://github.com/warung-kerja/agent-rules
 - Adopted rules commit (full SHA): TBD
-- Adopted paths: `standards/session-principles.md`, `standards/core-rules.md`, `workflows/product-session-setup.md`
+- Adopted paths: `standards/session-principles.md`, `standards/core-rules.md`, `standards/model-presets.md`, `workflows/project-session-setup.md`, and the selected preset guide
 - Rules access: pinned local checkout / vendored snapshot
 - Last adoption date: TBD
 - Project-specific overrides, reason, approving owner, and review date: none recorded
@@ -24,7 +25,7 @@ Fill this in inside the consuming product repository. `TBD` means unresolved, no
 - PR, merge, deployment, and rollback procedures: TBD
 - Protected data, production services, and existing holds: TBD
 
-## Linear and dispatch
+## Linear and dispatch (where configured)
 
 - Team and project identifiers: TBD
 - Available issue states and their mapping: TBD
@@ -35,13 +36,19 @@ Fill this in inside the consuming product repository. `TBD` means unresolved, no
 - Implementation concurrency: one Builder assignment
 - Completion definition (merged / deployed and accepted / other): TBD
 - Dispatch record: Linear issue comment with assignment ID, role, destination reference, timestamp, acceptance state, and latest outcome
-- Manager polling default: daily 08:00 Australia/Sydney; not installed until recorded
-- Sweeper default: Wednesday and Sunday 04:30 Australia/Sydney; not installed until recorded
+- Product-only Manager polling default: daily 08:00 Australia/Sydney; not installed until recorded
+- Non-product presets: on demand; no routines by default
+- Product-only Sweeper default: Wednesday and Sunday 04:30 Australia/Sydney; not installed until recorded
 - Single scheduler host for each routine: TBD (private host details belong in local configuration)
 
 ## Capabilities and authority
 
 - Model availability verified on: TBD
+- Automatic same-family upgrades: enabled when adopting standards/model-presets.md
+- Model policy revision/source: TBD
+- Explicit model pins and reasons: none recorded
+- Last upgrade check, applied changes, and blockers: TBD
+- Release watcher/controller binding: not installed
 - Model substitutions and owner agreement: none recorded
 - Available integrations: TBD
 - Allowed disposable test environment: TBD

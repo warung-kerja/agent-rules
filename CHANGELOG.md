@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-26 — Four project presets and model upgrades
+
+- Added Branding / Design (five roles), Prototype / Website (four), and Generic / All Purpose (two), preserving the owner's preferred starting models and responsibilities.
+- Added shared setup selection, per-role starter prompts, and profile/register templates that support all four presets.
+- Added standing same-family OpenAI model upgrades: for example, verified available Sol 6.2 replaces Sol 6.1 across adopting presets, sessions, and routine settings. Preserve pins and report unsupported or blocked runtime updates.
+- Updated earlier fixed-model wording to follow the upgrade policy. DeepSeek and generation-provider models remain outside this OpenAI session-family rule.
+
+Adopters must refresh their selected guide, model policy, prompts, and register. This documentation installs no project sessions or background release watcher and does not change existing runtime model settings.
+
 ## 2026-10-25 — Check existing credential documentation first
 
 - Require every session to check `02_Business_Operations/docs` in the local Obsidian vault before asking the owner for API keys or tokens.

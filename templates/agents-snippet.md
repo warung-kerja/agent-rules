@@ -5,19 +5,20 @@ Adapt the block below into the product's existing AGENTS.md. Replace placeholder
 ```markdown
 ## Shared agent standards
 
-This is a product-development project. Read `docs/agent-team/project-profile.md`
+This project uses the <selected preset> session setup. Read `docs/agent-team/project-profile.md`
 and the session register at <verified local or repository path>.
 
 Shared rules come from https://github.com/warung-kerja/agent-rules at the full
 commit recorded in the project profile. Read standards/session-principles.md,
-the selected core rules, and the product-session guide from <verified pinned checkout or vendored snapshot path>
+the selected core rules, model policy, and setup guide from <verified pinned checkout or vendored snapshot path>
 before acting in a team role. If unavailable, report the limitation and use
 only the last verified adopted snapshot; never silently follow moving main.
 
 The role and current authorized assignment are supplied by the session prompt.
 Do not impersonate another role or create duplicate sessions/routines.
-Builder owns implementation, Reviewer reviews independently, and Manager owns
-routine Linear updates. Planner sends plans to Manager. Brain is on demand.
+Use the role responsibilities in the selected setup guide; similarly named roles
+can differ between presets. Reconcile verified same-family model successors under
+the adopted model policy, preserving explicit pins and using supported controls.
 
 Use the project's recorded dispatch and messaging authority. Tickets, labels,
 review verdicts, and this rules library do not independently grant merge,

@@ -8,22 +8,29 @@ This repository owns reusable standards. Each product repository owns its implem
 
 Every session starts with the [15 shared principles](standards/session-principles.md), regardless of role or project type.
 
-Ask: **Is this a product-development project?**
+Choose the project type using [Project session setup](workflows/project-session-setup.md):
 
-- **Yes:** follow [Product session setup](workflows/product-session-setup.md) to establish the six-session team.
-- **No:** skip that team structure. Adopt only the standards relevant to the work. This rules library itself does not need six product sessions.
-- **Unclear:** ask the owner before creating sessions or routines.
+| Preset | Sessions |
+| --- | --- |
+| [Product Development](workflows/product-session-setup.md) | Brain, Planner, Builder, Sweeper, Reviewer, Manager |
+| [Branding / Design](workflows/design-session-setup.md) | General, Manager, Designer, Generator, 3D Builder |
+| [Prototype / Website](workflows/website-session-setup.md) | General, Manager, Designer, Builder |
+| [Generic / All Purpose](workflows/general-session-setup.md) | General, Generator |
+
+Ask only when the project type is unclear. The six-session structure applies only to Product Development. This rules library does not need a session team installed by default.
+
+All presets follow the [automatic model upgrade policy](standards/model-presets.md): upgrade Sol, Luna, and Astra sessions to verified available successors within their own families. For example, Sol 6.1 follows Sol 6.2 when released and available. Runtime updates require a supported settings interface; no background release watcher is installed by this documentation.
 
 To use this library, ask your agent:
 
-> Read https://github.com/warung-kerja/agent-rules and its shared session principles. For product development, also read its product-session setup guide. Determine whether this is product development. If it is, inspect the existing project and sessions, propose or apply the setup within my authorization, and preserve project-specific constraints. Record the adopted rules commit. Reuse existing sessions and routines where possible.
+> Read https://github.com/warung-kerja/agent-rules, its shared principles, and model policy. Select the appropriate project preset, using my stated project type or asking if unclear. Inspect existing sessions and apply the setup within my authorization. Preserve project-specific constraints, reuse working sessions/routines, and record the adopted rules commit and actual model bindings.
 
 ## Library
 
 | Folder | Purpose | Current contents |
 | --- | --- | --- |
-| `standards/` | Shared guardrails that apply across workflows | [Session principles](standards/session-principles.md), [core rules](standards/core-rules.md) |
-| `workflows/` | Procedures for setting up and operating projects | [Product session setup](workflows/product-session-setup.md), [adopting and updating rules](workflows/adopt-and-update.md) |
+| `standards/` | Shared guardrails that apply across workflows | [Session principles](standards/session-principles.md), [core rules](standards/core-rules.md), [model presets](standards/model-presets.md) |
+| `workflows/` | Procedures for setting up and operating projects | [Project preset selection](workflows/project-session-setup.md), setup guides above, [adopting and updating rules](workflows/adopt-and-update.md) |
 | `templates/` | Starting points copied into a consuming project | [Project profile](templates/project-profile.md), [session register](templates/session-register.md), [AGENTS snippet](templates/agents-snippet.md) |
 
 Keep role definitions and starter prompts together in the session guide for now. Add new folders only when real content needs them. Name files with lowercase words separated by hyphens.
