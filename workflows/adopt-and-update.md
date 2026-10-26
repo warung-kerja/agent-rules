@@ -32,6 +32,8 @@ When adopting the session principles, add `standards/session-principles.md` to t
 
 ## Across computers
 
+Before asking for API keys or tokens, consult `02_Business_Operations/docs` relative to the local Obsidian vault, following the core credential lookup rule. The owner maintains this folder on both laptops; resolve the current machine's vault location locally and keep any absolute binding out of the public rules repo. This library contains the lookup instruction, not credentials or copies of those documents. Refresh existing sessions to read the updated core rules when adopting this change.
+
 Clone/pull the same GitHub library and resolve the same adopted SHA on each machine. Rebind local checkout paths, project IDs, chat IDs, model routes, tools, and credentials on that machine; never assume they transfer automatically.
 
 Choose one scheduler host for each routine. A laptop and an always-on computer must not both dispatch the same ticket or run the same sweep. Keep shared dispatch evidence in Linear or another explicitly designated durable store; chat history alone is insufficient across machines.
