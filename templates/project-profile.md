@@ -11,7 +11,7 @@ Fill this in inside the consuming project repository or documented project folde
 - Product repository URL: TBD
 - Shared rules repository: https://github.com/warung-kerja/agent-rules
 - Adopted rules commit (full SHA): TBD
-- Adopted paths: `standards/session-principles.md`, `standards/core-rules.md`, `standards/model-presets.md`, `workflows/project-session-setup.md`, and the selected preset guide
+- Adopted paths: `standards/session-principles.md`, `standards/core-rules.md`, `standards/model-presets.md`, `workflows/project-session-setup.md`, the selected preset guide, and each selected canonical `roles/*.md` file
 - Rules access: pinned local checkout / vendored snapshot
 - Last adoption date: TBD
 - Project-specific overrides, reason, approving owner, and review date: none recorded

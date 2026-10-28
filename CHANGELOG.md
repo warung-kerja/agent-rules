@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-29 — Centralized session roles
+
+- Added one canonical file for each of the ten roles in `roles/`, with purpose, responsibilities, boundaries, outputs, and completion rules. Shared roles preserve explicit preset differences.
+- Replaced duplicated descriptions and role prompt blocks across all four setup guides with canonical role references. Setup guides retain model assignments, routing, and routine configuration.
+- Made Brain’s bounded investigation delegation and assigned architectural PR assessment explicit; Reviewer retains routine independent review and formal verdicts.
+- Updated startup prompts, adoption guidance, and templates to load and record role files at the adopted rules revision.
+
+Adopters must include selected role files in pinned checkouts/snapshots and refresh session entrypoints and instructions at a safe boundary. This change does not update existing chats, install routines, or expand authority.
+
 ## 2026-10-26 — Four project presets and model upgrades
 
 - Added Branding / Design (five roles), Prototype / Website (four), and Generic / All Purpose (two), preserving the owner's preferred starting models and responsibilities.

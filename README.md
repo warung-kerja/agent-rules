@@ -31,9 +31,10 @@ To use this library, ask your agent:
 | --- | --- | --- |
 | `standards/` | Shared guardrails that apply across workflows | [Session principles](standards/session-principles.md), [core rules](standards/core-rules.md), [model presets](standards/model-presets.md) |
 | `workflows/` | Procedures for setting up and operating projects | [Project preset selection](workflows/project-session-setup.md), setup guides above, [adopting and updating rules](workflows/adopt-and-update.md) |
+| `roles/` | Canonical session responsibilities, boundaries, outputs, and completion rules | [Brain](roles/brain.md), [Planner](roles/planner.md), [Builder](roles/builder.md), [Sweeper](roles/sweeper.md), [Reviewer](roles/reviewer.md), [Manager](roles/manager.md), [General](roles/general.md), [Designer](roles/designer.md), [Generator](roles/generator.md), [3D Builder](roles/3d-builder.md) |
 | `templates/` | Starting points copied into a consuming project | [Project profile](templates/project-profile.md), [session register](templates/session-register.md), [AGENTS snippet](templates/agents-snippet.md) |
 
-Keep role definitions and starter prompts together in the session guide for now. Add new folders only when real content needs them. Name files with lowercase words separated by hyphens.
+Maintain each role once in `roles/`. Setup guides select roles, models, routing, and routine defaults; startup prompts direct sessions to read the canonical role file. Shared roles use explicit preset sections so responsibilities do not leak between project types. Name files with lowercase words separated by hyphens.
 
 ## How changes reach projects
 

@@ -3,7 +3,7 @@
 ## First adoption
 
 1. Obtain a readable checkout of `warung-kerja/agent-rules` on the machine running the project. Record its full Git commit SHA.
-2. Read README.md, the session principles, core rules, model policy, and the selected setup guide. Use the [project preset selector](project-session-setup.md); ask only if the project type is unclear. The session principles apply to every preset.
+2. Read README.md, the session principles, core rules, model policy, the selected setup guide, and its linked canonical role files. Use the [project preset selector](project-session-setup.md); ask only if the project type is unclear. The session principles apply to every preset.
 3. Inspect the consuming repo's instructions, existing chats, Linear project, automations, and active work. Reuse working setup; identify conflicts before changing it.
 4. Copy the project-profile and session-register templates into the project's `docs/agent-team/` or equivalent documented project folder. Select only the chosen preset's roles; product-only routine defaults do not apply to other presets. Fill them with verified local settings. Keep private host paths and chat IDs in an ignored local register if the product repo is public.
 5. Incorporate the AGENTS snippet into existing project instructions without overwriting unrelated content. Record the selected rules paths, full adopted SHA, local exceptions, and how agents can read that revision.
@@ -19,6 +19,18 @@ Change the canonical files here and add a dated CHANGELOG entry explaining behav
 A change that alters authority, routing, model defaults, schedules, or completion criteria should describe what adopters must reconfigure. Do not imply existing sessions were updated just because the Markdown changed.
 
 ## Updating a consuming project
+
+### Adopting centralized role files
+
+Include every selected `roles/*.md` file in the adopted paths and any vendored snapshot, preserving the `roles/`, `standards/`, and `workflows/` relative layout. Each role file is the canonical instruction body; setup guides hold roster, model, routing, and schedule configuration. A role shared across presets has explicit preset sections; read only the applicable sections. Keep local exceptions in the project profile rather than editing a second role definition.
+
+Replace previous copied role prompt blocks with the startup preamble and a resolved canonical role path. Update runtime entrypoints to explicitly read that file at the adopted SHA. Refresh existing sessions through supported, authorized mechanisms at a safe assignment boundary, preserving active work and holds. Record each session’s role file, preset section, revision, and acknowledgement in the register. If direct access is unavailable, supply the exact adopted file contents with source path and SHA as a snapshot; refresh it on adoption instead of maintaining a separate summary.
+
+Brain now explicitly supports bounded delegated investigation and assigned architectural PR assessment. Reviewer retains routine independent review and the formal verdict; Brain is not an additional required gate. This does not grant new messaging or review-posting authority.
+
+Editing a role file updates the library only. No running chat reload, cross-project rollout, new session, or routine is installed by this change.
+
+### Existing preset and principles migrations
 
 To adopt the four-preset setup and model upgrades, include `standards/model-presets.md`, the selector, and the selected setup guide in the recorded paths/snapshots. Refresh existing prompts and runtime entrypoints. Record family, actual model, explicit pins, and upgrade status per session. Existing projects may reconcile verified same-family successors under this policy without a full rules migration; record the model-policy source separately. Other standards still follow pinned adoption. No existing chat, routine, or watcher changes merely because these files are added.
 

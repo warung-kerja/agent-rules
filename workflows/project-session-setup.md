@@ -1,6 +1,6 @@
 # Choose and set up a project session preset
 
-Updated: 2026-10-26.
+Updated: 2026-10-29.
 
 All sessions follow the [shared principles](../standards/session-principles.md), [core rules](../standards/core-rules.md), and [model upgrade policy](../standards/model-presets.md).
 
@@ -19,22 +19,24 @@ A website does not automatically require the six-role product team. Use the Prot
 
 ## Shared setup procedure
 
-1. Read the selected guide and inspect existing project instructions, sessions, tools, and active work. Preserve context and reuse matching sessions.
+1. Read the selected guide and its linked canonical role files, then inspect existing project instructions, sessions, tools, and active work. Preserve context and reuse matching sessions.
 2. Follow [adoption and updates](adopt-and-update.md). Copy the project-profile and session-register templates into `docs/agent-team/` or the project's equivalent documented location. Keep only the selected preset's roles. Non-code projects can use their project folder rather than a software repository.
 3. Record the selected type, adopted rules SHA, model policy, actual host model availability, authorized delegation/messaging routes, tool access, file ownership, outputs, and acceptance criteria. Use Linear where configured; do not fabricate a board or make tool access a completed assumption.
-4. When authorized to establish the team, create missing role chats using the common preamble below plus the matching role prompt. Resolve family models using the model policy, verify their actual bindings, and preserve project-specific pins. Record missing tools/models as blockers.
+4. When authorized to establish the team, create missing role chats using the common preamble below with the matching canonical role file path. Resolve family models using the model policy, verify their actual bindings, and preserve project-specific pins. Record missing tools/models as blockers.
 5. Verify that each role accepted its remit and read the adopted rules. Check harmless routing acknowledgement only within authorized routes. Record the final session bindings and any deferred configuration. Do not run image generation, renders, builds, or deployments merely to prove a chat exists.
 
 The three non-product presets are on demand by default. No Manager polling, Sweeper, Reviewer, or other recurring routine is implied. Substantial or risky work still needs independent review under the shared principles; use an authorized fresh review context without adding permanent roles by default.
 
 ## Common preamble for Design, Website, and General roles
 
-Replace placeholders and append the appropriate role block from the selected guide:
+Replace placeholders. Resolve `<ROLE_FILE>` to the canonical `roles/*.md` file linked by the selected guide, using the adopted checkout or snapshot. Read the role file directly; do not maintain another role-description copy here:
 
 ```text
 You are <ROLE> for <PROJECT>, using the <PRESET> session setup.
 Read the project instructions, project profile, session register, and adopted
-shared session principles, core rules, model policy, and selected setup guide.
+shared session principles, core rules, model policy, selected setup guide, and
+<ROLE_FILE> at the recorded adopted revision. Apply the role file’s selected-preset
+section and shared sections that name that preset. Report inaccessible sources.
 Follow the registered model family and reconcile verified same-family successors
 before new assignments, respecting explicit pins and supported settings controls.
 Preserve the role, context, active work, and agreed scope when delegating.

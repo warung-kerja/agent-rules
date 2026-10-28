@@ -38,6 +38,7 @@ Use IANA timezone names and verify how the scheduler handles daylight saving. Re
 - Duplicate sessions/routines identified: TBD
 - Active assignments and holds preserved: TBD
 - Rename/archive/cancel actions explicitly authorized: TBD
-- Rules revision read by each session: TBD
+- Canonical role file and applicable preset section for each session: TBD
+- Rules revision and role file read by each session, with acknowledgement evidence: TBD
 - Routing, acknowledgement, and model checks: TBD
 - Blocked or deferred setup: TBD
