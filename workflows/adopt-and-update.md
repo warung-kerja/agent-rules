@@ -20,6 +20,8 @@ A change that alters authority, routing, model defaults, schedules, or completio
 
 ## Updating a consuming project
 
+Use the [session refresh prompt](../templates/session-refresh-prompt.md) to apply this workflow to an existing session. Set its target revision to the reviewed, merged commit selected for the project. Keep shared adoption changes with one designated owner; individual sessions acknowledge the adopted role file and revision.
+
 ### Adopting centralized role files
 
 Include every selected `roles/*.md` file in the adopted paths and any vendored snapshot, preserving the `roles/`, `standards/`, and `workflows/` relative layout. Each role file is the canonical instruction body; setup guides hold roster, model, routing, and schedule configuration. A role shared across presets has explicit preset sections; read only the applicable sections. Keep local exceptions in the project profile rather than editing a second role definition.

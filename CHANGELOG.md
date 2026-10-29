@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-29 — Reusable session refresh prompt
+
+- Added `templates/session-refresh-prompt.md` with a target-revision placeholder for future role updates, linked from the README and adoption workflow.
+- Distinguishes proposed from adopted revisions, coordinates shared configuration through one owner, and records session acknowledgement without implying automatic reload or wider authority.
+
+Replace the revision placeholder before reuse. Saving this prompt does not refresh existing sessions or change project adoption records.
+
 ## 2026-10-29 — Centralized session roles
 
 - Added one canonical file for each of the ten roles in `roles/`, with purpose, responsibilities, boundaries, outputs, and completion rules. Shared roles preserve explicit preset differences.
