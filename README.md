@@ -25,12 +25,31 @@ To use this library, ask your agent:
 
 > Read https://github.com/warung-kerja/agent-rules, its shared principles, and model policy. Select the appropriate project preset, using my stated project type or asking if unclear. Inspect existing sessions and apply the setup within my authorization. Preserve project-specific constraints, reuse working sessions/routines, and record the adopted rules commit and actual model bindings.
 
+## Install or refresh with a skill
+
+The reusable [setup-agent-rules skill](skills/setup-agent-rules/SKILL.md) handles first adoption and refreshes without duplicating the central role definitions. Copy the `skills/setup-agent-rules/` folder into your local Codex skills directory (`$CODEX_HOME/skills`, or `~/.codex/skills` when unset). Keep this repository copy canonical; refresh the installed copy after skill changes. Local installation does not install project rules or update other machines.
+
+Once the skill is available in your session, use:
+
+```text
+Use $setup-agent-rules to install the shared rules in this project.
+```
+
+For an existing project:
+
+```text
+Use $setup-agent-rules to refresh this project's rules to the latest merged revision.
+```
+
+You can specify a preset or exact commit in either request. The skill preserves explicit project pins; otherwise a deliberate install/refresh resolves the latest merged revision once and records its full SHA. Chat creation, messaging, and schedules remain subject to the project's authorization.
+
 ## Library
 
 | Folder | Purpose | Current contents |
 | --- | --- | --- |
 | `standards/` | Shared guardrails that apply across workflows | [Session principles](standards/session-principles.md), [core rules](standards/core-rules.md), [model presets](standards/model-presets.md) |
 | `workflows/` | Procedures for setting up and operating projects | [Project preset selection](workflows/project-session-setup.md), setup guides above, [adopting and updating rules](workflows/adopt-and-update.md) |
+| `skills/` | Reusable adoption helper | [Set up agent rules](skills/setup-agent-rules/SKILL.md) |
 | `roles/` | Canonical session responsibilities, boundaries, outputs, and completion rules | [Brain](roles/brain.md), [Planner](roles/planner.md), [Builder](roles/builder.md), [Sweeper](roles/sweeper.md), [Reviewer](roles/reviewer.md), [Manager](roles/manager.md), [General](roles/general.md), [Designer](roles/designer.md), [Generator](roles/generator.md), [3D Builder](roles/3d-builder.md) |
 | `templates/` | Starting points and reusable prompts for consuming projects | [Project profile](templates/project-profile.md), [session register](templates/session-register.md), [AGENTS snippet](templates/agents-snippet.md), [session refresh prompt](templates/session-refresh-prompt.md) |
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Set Up Agent Rules"
+  short_description: "Install or refresh shared project agent rules"
+  default_prompt: "Use $setup-agent-rules to install or refresh the shared agent rules in this project."

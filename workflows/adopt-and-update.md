@@ -1,5 +1,11 @@
 # Adopt and update the shared rules
 
+## Using the setup skill
+
+The [setup-agent-rules skill](../skills/setup-agent-rules/SKILL.md) performs the file adoption and refresh workflow below. It reads canonical content from a verified rules revision rather than bundling a second set of role definitions. An explicit revision or project pin takes precedence; otherwise a deliberate install/refresh resolves the latest merged canonical `main` once to a full SHA and reviews the differences before adoption. This does not enable continuous updates or bypass project review requirements.
+
+Install the skill locally using the [README instructions](../README.md#install-or-refresh-with-a-skill). Updating this library does not update already-installed skill copies or consuming projects; refresh them deliberately. Runtime setup and per-session acknowledgements remain separate from project-file installation.
+
 ## First adoption
 
 1. Obtain a readable checkout of `warung-kerja/agent-rules` on the machine running the project. Record its full Git commit SHA.

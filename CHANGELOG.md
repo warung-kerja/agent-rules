@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-02 — Project rules setup skill
+
+- Added `skills/setup-agent-rules/` with install and refresh workflows that load the canonical library rather than duplicate role instructions.
+- Documented local installation and invocation, exact-revision snapshots, preservation of project exceptions, and separate file-adoption/session-refresh status.
+- An explicit install/refresh without a selected revision or project pin resolves the latest merged canonical `main` once to a full SHA; existing adoption review and authority requirements still apply.
+
+Copy or refresh the skill in each machine's local skills directory to use it. Installing the skill alone does not adopt rules into projects, refresh other sessions, or install routines.
+
 ## 2026-10-29 — Reusable session refresh prompt
 
 - Added `templates/session-refresh-prompt.md` with a target-revision placeholder for future role updates, linked from the README and adoption workflow.
