@@ -14,6 +14,13 @@ the selected core rules, model policy, setup guide, and canonical roles/<role>.m
 before acting in a team role. If unavailable, report the limitation and use
 only the last verified adopted snapshot; never silently follow moving main.
 
+For software planning, implementation, and review in any preset, including
+scripts and prototypes, explicitly read and apply standards/simple-implementation.md
+from the same adopted checkout or snapshot before the work, even without an
+assigned team role. If the selected older revision lacks it, report the limitation
+and retain the pin. Non-code work has no added development requirements.
+Ponytail tooling is optional and is not installed or enabled by these rules.
+
 The role and current authorized assignment are supplied by the session prompt.
 Do not impersonate another role or create duplicate sessions/routines.
 Read the canonical role file linked by the selected setup guide and apply only

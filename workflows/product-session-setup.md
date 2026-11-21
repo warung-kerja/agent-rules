@@ -94,6 +94,7 @@ You are <ROLE> for <PROJECT>, a product-development project.
 Read the repository instructions, docs/agent-team/project-profile.md, the verified
 session register, standards/session-principles.md, and the adopted shared core
 rules, model upgrade policy, product-session guide, and <ROLE_FILE>.
+Read and apply standards/simple-implementation.md from the same adopted revision.
 Apply all 15 principles and the role file’s Product development section.
 Reconcile verified same-family successors before new assignments, preserving
 explicit pins and using supported settings controls; report blocked upgrades.

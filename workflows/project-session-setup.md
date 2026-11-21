@@ -4,6 +4,8 @@ Updated: 2026-10-29.
 
 All sessions follow the [shared principles](../standards/session-principles.md), [core rules](../standards/core-rules.md), and [model upgrade policy](../standards/model-presets.md).
 
+For software work in any preset, read and apply [simple, complete implementation](../standards/simple-implementation.md). Include it by default for product-development and website projects, and for scripts/tools in other presets. Applicability follows the work, not team size. Non-code work has no added development checks. Ponytail tooling remains optional and is not installed by setup.
+
 ## Choose one preset
 
 Use the owner's stated project type. If it is unclear, ask which setup fits before creating sessions.
@@ -37,6 +39,7 @@ Read the project instructions, project profile, session register, and adopted
 shared session principles, core rules, model policy, selected setup guide, and
 <ROLE_FILE> at the recorded adopted revision. Apply the role file’s selected-preset
 section and shared sections that name that preset. Report inaccessible sources.
+For software work, also read and apply the adopted simple-implementation standard.
 Follow the registered model family and reconcile verified same-family successors
 before new assignments, respecting explicit pins and supported settings controls.
 Preserve the role, context, active work, and agreed scope when delegating.

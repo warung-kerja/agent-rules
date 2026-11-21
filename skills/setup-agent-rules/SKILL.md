@@ -26,6 +26,7 @@ At the selected revision read:
 
 - `README.md`
 - `standards/session-principles.md`, `standards/core-rules.md`, and `standards/model-presets.md`
+- For software work in any preset, `standards/simple-implementation.md` when present at the selected revision. Product-development and website projects include it by default; include it for scripts, tools, or other software in general/design projects too. Non-code work has no extra development requirements. If an explicitly selected older revision lacks it, preserve the pin and report that the standard is unavailable there; do not mix in a newer file.
 - `workflows/project-session-setup.md` and `workflows/adopt-and-update.md`
 - The selected preset guide and the canonical `roles/*.md` files it links
 - `templates/project-profile.md`, `templates/session-register.md`, and `templates/agents-snippet.md`
@@ -37,11 +38,13 @@ These are paths relative to the verified rules source, not this skill folder. Fo
 
 Use the project's established adoption layout. For a new setup, default to `docs/agent-team/` (or an equivalent documented folder for non-code projects):
 
-1. Fill the project profile from verified facts: preset, full source SHA, adopted paths, access method, local exceptions, acceptance definition, and authority. Leave genuinely unknown runtime bindings explicitly unresolved; do not invent them or block useful file setup on optional integrations.
+1. Fill the project profile from verified facts: whether software work is in scope, the simple-implementation standard’s applicability and any exceptions, preset, full source SHA, adopted paths, access method, local exceptions, acceptance definition, and authority. Leave genuinely unknown runtime bindings explicitly unresolved; do not invent them or block useful file setup on optional integrations.
 2. Create the session register with only the selected preset's roles. Mark sessions, tools, and routines unconfigured unless verified. Keep private host paths, identifiers, and credentials outside public committed material.
-3. Default to a portable snapshot in `docs/agent-team/shared-rules/` unless the project already has reliable pinned-checkout access. Copy the selected standards, workflows, role files, and supporting documents needed by their relative links from the exact SHA, preserving the source directory structure. Include link dependencies without enabling their presets. Record source URL, full SHA, and copied paths; snapshots are derived copies, not a second place to edit role definitions.
-4. Merge a concise shared-rules section into the applicable `AGENTS.md` or supported runtime entrypoint, using the template. Preserve unrelated instructions. Explicitly direct agents to the project profile, register, shared principles, and canonical role file for their assigned role/preset. A Markdown link alone is not an instruction loader. Do not invent a role for an unassigned session.
+3. Default to a portable snapshot in `docs/agent-team/shared-rules/` unless the project already has reliable pinned-checkout access. Copy the selected standards, workflows, role files, and supporting documents needed by their relative links from the exact SHA, preserving the source directory structure. Include `standards/simple-implementation.md` by default for software projects when available at the selected SHA. Include link dependencies without enabling their presets; copying a software standard as a link dependency does not make it apply to non-code work. Record source URL, full SHA, and copied paths; snapshots are derived copies, not a second place to edit role definitions.
+4. Merge a concise shared-rules section into the applicable `AGENTS.md` or supported runtime entrypoint, using the template. Preserve unrelated instructions. Explicitly direct agents to the project profile, register, shared principles, and canonical role file for their assigned role/preset. For software work, explicitly instruct agents to read and apply the adopted simple-implementation standard, including sessions without an assigned team role. A Markdown link alone is not an instruction loader. Do not invent a role for an unassigned session.
 5. Follow the project's adoption/review process. Prepare an adoption PR where required and supported. Keep a proposed revision distinct from an active adopted revision until that process completes. Do not require another permission question for already-authorized local file edits.
+
+Ponytail is optional tooling, not an installation dependency. Do not install or enable its plugin, commands, hooks, mode state, or metrics during rules setup. Separate owner authorization and runtime verification are needed for a requested plugin installation; the adapted standard works without it.
 
 ## Refresh without duplicating setup
 
@@ -53,6 +56,6 @@ After adoption, refresh this session at a safe assignment boundary. For other se
 
 ## Verify and report
 
-Check the actual resulting files: resolved source SHA, snapshot content against that revision, required local links, preset/role coverage, preserved project exceptions, meaningful unresolved placeholders, and Git diff whitespace where applicable. Distinguish intentional unknown bindings from unfinished install instructions. Documentation installation does not require application tests or a trial build, render, generation job, or deployment.
+Check the actual resulting files: resolved source SHA, snapshot content against that revision, required local links, preset/role coverage, preserved project exceptions, meaningful unresolved placeholders, and Git diff whitespace where applicable. For software projects, verify the adopted standard’s presence, exact-revision provenance, profile applicability, and explicit instruction loading. When the selected older revision lacks it, report the limitation rather than claiming adoption. Confirm no optional plugin was installed by rules setup. Distinguish intentional unknown bindings from unfinished install instructions. Documentation installation does not require application tests or a trial build, render, generation job, or deployment.
 
 Report the project, preset, revision, files changed, validation evidence, and separate statuses for project-file adoption and runtime/session refresh. List only actionable blockers or pending adoption steps. Do not claim an automatic update service, schedule, permission grant, or runtime change was installed without verifying it.

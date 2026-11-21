@@ -32,6 +32,8 @@ Cross-chat messages require owner authorization for the specific project team an
 
 ## Build and review
 
+For software planning, implementation, and review in any preset, read and apply [simple, complete implementation](simple-implementation.md) at the project’s adopted revision. This includes prototypes and scripts without requiring a product team. Non-code work has no additional development requirements.
+
 Prefer small, focused PRs. Verify changed behavior proportionately, including required project checks. Broaden or repeat checks when a new change, failure, or concrete unresolved concern justifies it. State what passed, what failed, and what remains unverified.
 
 Reviewer independently inspects the current PR head and base, relevant diff, regression risks, and verification. A review verdict names the exact head SHA. A changed head needs a fresh verdict. Reviewer sends fixes back to Builder rather than rewriting the code being reviewed.

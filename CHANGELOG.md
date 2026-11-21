@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-22 — Simple implementation by default for software work
+
+- Added an adapted, independently written Ponytail-inspired standard: inspect affected flows, reuse existing mechanisms, avoid speculative complexity, preserve required behavior and safeguards, and verify meaningful risks. Readability and maintainability take precedence over line count.
+- Wired the standard into shared principles/core rules, Builder/Reviewer/General roles, setup and refresh prompts, project profiles, and adoption guidance across presets. Non-code work has no added development requirements.
+- Updated the setup skill to include and explicitly load the same-revision standard by default for new software projects, including prototypes, websites, scripts, and tools; preserve older pins and report when the file is unavailable.
+- Kept the Ponytail plugin, commands, hooks, and metrics optional; rules adoption installs none of them.
+
+Publish and merge this revision before offering it through latest-merged setup. Refresh installed setup-skill copies on each host. Existing projects and active sessions require deliberate adoption/refresh; this change performs no project rollout, session reload, plugin installation, or automation setup.
+
 ## 2026-11-02 — Project rules setup skill
 
 - Added `skills/setup-agent-rules/` with install and refresh workflows that load the canonical library rather than duplicate role instructions.
