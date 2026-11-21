@@ -16,6 +16,8 @@ Install the skill locally using the [README instructions](../README.md#install-o
 6. If agents cannot access the library reliably, vendor the selected files into `docs/agent-team/shared-rules/`. Preserve their source paths and SHA; update them together through adoption PRs. Configure each runtime's recognized instructions entrypoint to read these files.
 7. Follow the selected session guide to configure and verify the team. Record what is installed, deferred, or blocked.
 
+Software projects adopt [simple, complete implementation](../standards/simple-implementation.md) by default in every preset, including websites, prototypes, scripts, and tools. Record applicability and exceptions in the profile; include the standard at the same adopted SHA in the checkout/snapshot and explicitly direct software-working sessions to read it in the runtime entrypoint, even without a team role. Non-code work has no added development checks. An older selected revision that lacks the standard remains pinned: report its absence instead of mixing revisions. The Ponytail plugin, commands, hooks, and metrics are optional and are not installed by adoption.
+
 A Markdown link does not load instructions automatically. For Codex, use the project's AGENTS.md as the entrypoint and explicitly direct it to the relevant files. Other agents need their own supported entrypoint. See the [official AGENTS.md guidance](https://learn.chatgpt.com/docs/agent-configuration/agents-md).
 
 ## Updating the library
@@ -27,6 +29,10 @@ A change that alters authority, routing, model defaults, schedules, or completio
 ## Updating a consuming project
 
 Use the [session refresh prompt](../templates/session-refresh-prompt.md) to apply this workflow to an existing session. Set its target revision to the reviewed, merged commit selected for the project. Keep shared adoption changes with one designated owner; individual sessions acknowledge the adopted role file and revision.
+
+### Adopting the simple-implementation standard
+
+Include `standards/simple-implementation.md`, its loading instructions, and profile applicability in a deliberate software-project adoption update. Update snapshots and entrypoints together at the selected SHA, preserve exceptions, and refresh affected sessions at a safe boundary. Keep existing older pins until a revision change is authorized. No plugin installation, new team, schedule, or cross-project rollout is implied.
 
 ### Adopting centralized role files
 

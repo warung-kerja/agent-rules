@@ -19,6 +19,12 @@ Fetch or obtain a readable copy of the library and resolve the target revision
 to its full commit SHA. Read README.md, standards/session-principles.md,
 standards/core-rules.md, standards/model-presets.md, workflows/adopt-and-update.md,
 the selected preset's setup guide, and its linked roles/<role>.md at that revision.
+For software work in any preset, also read and apply standards/simple-implementation.md
+from that revision when present. Include it in the shared adoption and entrypoint,
+including for sessions without a team role. If the selected older revision lacks
+it, preserve the pin and report the limitation; do not mix revisions. Non-code
+work has no added development requirements. Keep Ponytail tooling optional;
+this refresh does not install or enable plugins or hooks.
 Compare the target with the project's currently adopted revision and identify
 relevant changes or conflicts before applying them.
 

@@ -43,11 +43,17 @@ Use $setup-agent-rules to refresh this project's rules to the latest merged revi
 
 You can specify a preset or exact commit in either request. The skill preserves explicit project pins; otherwise a deliberate install/refresh resolves the latest merged revision once and records its full SHA. Chat creation, messaging, and schedules remain subject to the project's authorization.
 
+## Default for software projects
+
+Software projects use [simple, complete implementation](standards/simple-implementation.md): read connected code, reuse existing mechanisms, avoid speculative complexity, finish the entire change, and verify meaningful risks. This applies to product development, websites, prototypes, scripts, and tools across presets. Non-code work has no added development requirements.
+
+The setup skill includes the standard in new software-project adoptions when it exists at the selected rules revision, records its applicability, and adds explicit instruction loading. Existing projects need a deliberate pinned refresh. Older selected revisions are preserved with an availability limitation. The [Ponytail](https://github.com/DietrichGebert/ponytail) plugin and its commands/hooks are optional; setup does not install or enable them.
+
 ## Library
 
 | Folder | Purpose | Current contents |
 | --- | --- | --- |
-| `standards/` | Shared guardrails that apply across workflows | [Session principles](standards/session-principles.md), [core rules](standards/core-rules.md), [model presets](standards/model-presets.md) |
+| `standards/` | Shared guardrails that apply across workflows | [Session principles](standards/session-principles.md), [core rules](standards/core-rules.md), [simple implementation](standards/simple-implementation.md), [model presets](standards/model-presets.md) |
 | `workflows/` | Procedures for setting up and operating projects | [Project preset selection](workflows/project-session-setup.md), setup guides above, [adopting and updating rules](workflows/adopt-and-update.md) |
 | `skills/` | Reusable adoption helper | [Set up agent rules](skills/setup-agent-rules/SKILL.md) |
 | `roles/` | Canonical session responsibilities, boundaries, outputs, and completion rules | [Brain](roles/brain.md), [Planner](roles/planner.md), [Builder](roles/builder.md), [Sweeper](roles/sweeper.md), [Reviewer](roles/reviewer.md), [Manager](roles/manager.md), [General](roles/general.md), [Designer](roles/designer.md), [Generator](roles/generator.md), [3D Builder](roles/3d-builder.md) |

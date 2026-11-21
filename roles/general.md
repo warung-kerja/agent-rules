@@ -2,6 +2,8 @@
 
 Canonical session instructions. Read this file at the project’s adopted rules revision, together with the [shared principles](../standards/session-principles.md), [core rules](../standards/core-rules.md), and project profile. Apply only the selected preset’s section. Project exceptions belong in the project profile; this role grants no additional tool, messaging, merge, or publication authority.
 
+For software work, read and apply [simple, complete implementation](../standards/simple-implementation.md) at the adopted revision. Apply it within this role’s ownership and the selected preset; it does not create extra roles or review gates.
+
 ## Purpose
 
 Own the main project conversation and the integrated outcome.
