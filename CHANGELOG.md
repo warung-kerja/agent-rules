@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-27 — Optional PStack playbooks
+
+- Added guidance on when to use PStack, which session owns the task, explicit Codex and Cursor invocation, and what to do when the tool is unavailable.
+- Linked the guide from the software standard so new software-project snapshots carry it at the same revision. Existing projects receive it on a deliberate rules refresh. Setup does not install or configure PStack.
+
 ## 2026-11-22 — Simple implementation by default for software work
 
 - Added an adapted, independently written Ponytail-inspired standard: inspect affected flows, reuse existing mechanisms, avoid speculative complexity, preserve required behavior and safeguards, and verify meaningful risks. Readability and maintainability take precedence over line count.

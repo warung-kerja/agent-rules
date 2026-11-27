@@ -37,6 +37,8 @@ Report the outcome, relevant verification, and material limitations or risks con
 
 ## Origin and optional tooling
 
+Before choosing a PStack playbook for software work, read [optional PStack playbooks](pstack.md) at the adopted revision.
+
 Inspired by Dietrich Gebert's [Ponytail skill](https://github.com/DietrichGebert/ponytail/blob/main/skills/ponytail/SKILL.md) and [review skill](https://github.com/DietrichGebert/ponytail/blob/main/skills/ponytail-review/SKILL.md), reviewed on 2026-11-22 (plugin manifest version 5.3.3, MIT). This is independently written Warung guidance; the adopted agent-rules commit is its source of truth. It does not track upstream changes automatically.
 
 Ponytail's plugin, commands, mode switches, lifecycle hooks, and local metrics are optional. Do not install, enable, or trust them as part of rules setup. They are not required to apply this standard. If separately requested, check compatibility and conflicts with the project's rules and verify actual runtime behavior. Neither installation nor instruction loading proves compliance or measured savings.

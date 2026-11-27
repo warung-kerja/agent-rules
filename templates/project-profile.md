@@ -10,6 +10,7 @@ Fill this in inside the consuming project repository or documented project folde
 - Software work in scope: yes / no (product-development and website default to yes; assess scripts/tools in other presets)
 - Simple-implementation standard: applicable at adopted revision / not applicable to non-code work / unavailable at selected older revision; record exceptions below
 - Optional Ponytail plugin: not required or installed by rules adoption; record separately verified installation only if requested
+- Optional PStack playbooks: available under the adopted software standard when supported on the host; record any approved project-specific use or restrictions
 - Owner: TBD
 - Product repository URL: TBD
 - Shared rules repository: https://github.com/warung-kerja/agent-rules

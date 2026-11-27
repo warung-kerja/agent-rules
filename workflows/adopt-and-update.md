@@ -18,6 +18,8 @@ Install the skill locally using the [README instructions](../README.md#install-o
 
 Software projects adopt [simple, complete implementation](../standards/simple-implementation.md) by default in every preset, including websites, prototypes, scripts, and tools. Record applicability and exceptions in the profile; include the standard at the same adopted SHA in the checkout/snapshot and explicitly direct software-working sessions to read it in the runtime entrypoint, even without a team role. Non-code work has no added development checks. An older selected revision that lacks the standard remains pinned: report its absence instead of mixing revisions. The Ponytail plugin, commands, hooks, and metrics are optional and are not installed by adoption.
 
+When the software standard links to [optional PStack playbooks](../standards/pstack.md) at the selected revision, include that guide in the same snapshot. Record any approved project-specific use or restrictions in the profile. Adoption installs no PStack tooling and grants no additional authority.
+
 A Markdown link does not load instructions automatically. For Codex, use the project's AGENTS.md as the entrypoint and explicitly direct it to the relevant files. Other agents need their own supported entrypoint. See the [official AGENTS.md guidance](https://learn.chatgpt.com/docs/agent-configuration/agents-md).
 
 ## Updating the library

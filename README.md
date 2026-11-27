@@ -49,6 +49,8 @@ Software projects use [simple, complete implementation](standards/simple-impleme
 
 The setup skill includes the standard in new software-project adoptions when it exists at the selected rules revision, records its applicability, and adds explicit instruction loading. Existing projects need a deliberate pinned refresh. Older selected revisions are preserved with an availability limitation. The [Ponytail](https://github.com/DietrichGebert/ponytail) plugin and its commands/hooks are optional; setup does not install or enable them.
 
+The software standard links to [optional PStack playbooks](standards/pstack.md) for tasks that benefit from structured investigation, implementation, or review. New software-project setups carry this guidance with the standard.
+
 ## Library
 
 | Folder | Purpose | Current contents |
